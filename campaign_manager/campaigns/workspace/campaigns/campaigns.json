@@ -1,0 +1,94 @@
+{
+ "app": "campaign_manager",
+ "charts": [],
+ "content": "[{\"id\":\"campaigns_shortcut_1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign\",\"col\":3}},{\"id\":\"campaigns_shortcut_2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign Template\",\"col\":3}},{\"id\":\"campaigns_shortcut_3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign Audience\",\"col\":3}}]",
+ "creation": "2025-01-01 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "mail",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Campaigns",
+ "links": [
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Campaign",
+   "link_count": 0,
+   "link_to": "Campaign",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Campaign Template",
+   "link_count": 0,
+   "link_to": "Campaign Template",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Campaign Audience",
+   "link_count": 0,
+   "link_to": "Campaign Audience",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Campaign Email Log",
+   "link_count": 0,
+   "link_to": "Campaign Email Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Campaigns",
+ "name": "Campaigns",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 1,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "format": "{} Active",
+   "label": "Campaign",
+   "link_to": "Campaign",
+   "stats_filter": "{ \"status\": [\"in\", [\"Draft\", \"Running\", \"Scheduled\"]] }",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "Campaign Template",
+   "link_to": "Campaign Template",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "label": "Campaign Audience",
+   "link_to": "Campaign Audience",
+   "type": "DocType"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "campaign",
+  "recipient_email",
+  "full_name",
+  "status",
+  "sent_at",
+  "opened_at",
+  "clicked_at",
+  "token",
+  "error_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Campaign",
+   "options": "Campaign",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recipient_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Recipient Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Queued\nSent\nOpened\nClicked\nFailed\nBounced"
+  },
+  {
+   "fieldname": "sent_at",
+   "fieldtype": "Datetime",
+   "label": "Sent At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "opened_at",
+   "fieldtype": "Datetime",
+   "label": "Opened At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clicked_at",
+   "fieldtype": "Datetime",
+   "label": "Clicked At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Tracking Token",
+   "read_only": 1
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Small Text",
+   "label": "Error Message",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Campaigns",
+ "name": "Campaign Email Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "All"
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

@@ -149,23 +149,13 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"campaign_manager.tasks.all"
-# 	],
-# 	"daily": [
-# 		"campaign_manager.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"campaign_manager.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"campaign_manager.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"campaign_manager.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"cron": {
+		"*/5 * * * *": [
+			"campaign_manager.tasks.send_queued_steps"
+		]
+	}
+}
 
 # Testing
 # -------

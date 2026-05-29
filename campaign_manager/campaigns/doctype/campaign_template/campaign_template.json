@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "autoname": "field:template_name",
+ "creation": "2025-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "template_name",
+  "subject",
+  "preview_text",
+  "body_html",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Template Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "preview_text",
+   "fieldtype": "Small Text",
+   "label": "Preview Text"
+  },
+  {
+   "fieldname": "body_html",
+   "fieldtype": "HTML Editor",
+   "label": "Body HTML",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Active"
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Campaigns",
+ "name": "Campaign Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "template_name",
+ "track_changes": 1
+}

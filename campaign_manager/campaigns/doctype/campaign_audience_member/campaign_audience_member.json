@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "email",
+  "full_name",
+  "status",
+  "unsubscribed_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "default": "Subscribed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Subscribed\nUnsubscribed"
+  },
+  {
+   "fieldname": "unsubscribed_on",
+   "fieldtype": "Datetime",
+   "label": "Unsubscribed On",
+   "read_only": 1
+  }
+ ],
+ "is_child_table": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Campaigns",
+ "name": "Campaign Audience Member",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

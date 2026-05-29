@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "autoname": "CAMP-.YYYY.-.#####",
+ "creation": "2025-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_campaign_details",
+  "campaign_name",
+  "status",
+  "campaign_type",
+  "section_email_settings",
+  "email_template",
+  "subject",
+  "preview_text",
+  "sender_name",
+  "sender_email",
+  "section_audience",
+  "audience",
+  "section_schedule",
+  "send_immediately",
+  "scheduled_date",
+  "section_email_sequence",
+  "schedule",
+  "section_analytics",
+  "column_break_analytics_left",
+  "total_recipients",
+  "total_sent",
+  "total_opened",
+  "total_clicked",
+  "total_failed",
+  "column_break_analytics_right",
+  "open_rate",
+  "click_rate",
+  "delivery_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_campaign_details",
+   "fieldtype": "Section Break",
+   "label": "Campaign Details"
+  },
+  {
+   "fieldname": "campaign_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Campaign Name",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nScheduled\nRunning\nCompleted\nPaused"
+  },
+  {
+   "default": "Email",
+   "fieldname": "campaign_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Campaign Type",
+   "options": "Email\nWhatsApp\nMeta"
+  },
+  {
+   "fieldname": "section_email_settings",
+   "fieldtype": "Section Break",
+   "label": "Email Settings"
+  },
+  {
+   "fieldname": "email_template",
+   "fieldtype": "Link",
+   "label": "Email Template",
+   "options": "Campaign Template"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "preview_text",
+   "fieldtype": "Small Text",
+   "label": "Preview Text"
+  },
+  {
+   "fieldname": "sender_name",
+   "fieldtype": "Data",
+   "label": "Sender Name"
+  },
+  {
+   "fieldname": "sender_email",
+   "fieldtype": "Link",
+   "label": "Sender Email",
+   "options": "Email Account"
+  },
+  {
+   "fieldname": "section_audience",
+   "fieldtype": "Section Break",
+   "label": "Audience"
+  },
+  {
+   "fieldname": "audience",
+   "fieldtype": "Link",
+   "label": "Audience",
+   "options": "Campaign Audience"
+  },
+  {
+   "fieldname": "section_schedule",
+   "fieldtype": "Section Break",
+   "label": "Schedule"
+  },
+  {
+   "default": "1",
+   "fieldname": "send_immediately",
+   "fieldtype": "Check",
+   "label": "Send Immediately"
+  },
+  {
+   "depends_on": "eval:!doc.send_immediately",
+   "fieldname": "scheduled_date",
+   "fieldtype": "Datetime",
+   "label": "Scheduled Date"
+  },
+  {
+   "description": "Define multiple emails to send at intervals. Leave empty to send a single email immediately.",
+   "fieldname": "section_email_sequence",
+   "fieldtype": "Section Break",
+   "label": "Email Sequence"
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Table",
+   "label": "Email Sequence",
+   "options": "Campaign Schedule"
+  },
+  {
+   "fieldname": "section_analytics",
+   "fieldtype": "Section Break",
+   "label": "Analytics"
+  },
+  {
+   "fieldname": "column_break_analytics_left",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_recipients",
+   "fieldtype": "Int",
+   "label": "Total Recipients",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_sent",
+   "fieldtype": "Int",
+   "label": "Total Sent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_opened",
+   "fieldtype": "Int",
+   "label": "Total Opened",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_clicked",
+   "fieldtype": "Int",
+   "label": "Total Clicked",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_failed",
+   "fieldtype": "Int",
+   "label": "Total Failed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_analytics_right",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "open_rate",
+   "fieldtype": "Float",
+   "label": "Open Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "click_rate",
+   "fieldtype": "Float",
+   "label": "Click Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_rate",
+   "fieldtype": "Float",
+   "label": "Delivery Rate (%)",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Campaigns",
+ "name": "Campaign",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "campaign_name",
+ "track_changes": 1,
+ "track_views": 1
+}
